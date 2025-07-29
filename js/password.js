@@ -97,22 +97,22 @@ async function sha256(message) {
  * 显示密码验证弹窗
  */
 function showPasswordModal() {
-    const passwordModal = document.getElementById('passwordModal');
-    if (passwordModal) {
-        // 防止出现豆瓣区域滚动条
-        document.getElementById('doubanArea').classList.add('hidden');
-        document.getElementById('passwordCancelBtn').classList.add('hidden');
+    // const passwordModal = document.getElementById('passwordModal');
+    // if (passwordModal) {
+    //     // 防止出现豆瓣区域滚动条
+    //     document.getElementById('doubanArea').classList.add('hidden');
+    //     document.getElementById('passwordCancelBtn').classList.add('hidden');
 
-        passwordModal.style.display = 'flex';
+    //     passwordModal.style.display = 'flex';
 
-        // 确保输入框获取焦点
-        setTimeout(() => {
-            const passwordInput = document.getElementById('passwordInput');
-            if (passwordInput) {
-                passwordInput.focus();
-            }
-        }, 100);
-    }
+    //     // 确保输入框获取焦点
+    //     setTimeout(() => {
+    //         const passwordInput = document.getElementById('passwordInput');
+    //         if (passwordInput) {
+    //             passwordInput.focus();
+    //         }
+    //     }, 100);
+    // }
 }
 
 /**
